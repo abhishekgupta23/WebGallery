@@ -1,0 +1,209 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Web Site By Abhishek Narayan - www.webgallery.com</title>
+<link href="css/styles.css" rel="stylesheet" type="text/css" media="screen">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<style type="text/css">
+.auto-style1 {
+	margin-top: 0px;
+}
+.auto-style2 {
+	margin-right: 30px;
+}
+.mySlides {display:none;}
+
+{
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+
+
+
+
+
+  
+  
+</style>
+</head>
+<body>
+
+<div id="wrapper" class="auto-style2" style="width: 961px">
+
+<div id="top">
+<div id="logo" style="width: 456px">
+<img src="images/Capture.PNG" width="280" />
+</div>
+<div id="social-media">
+<p>Connect With Us</p>
+<ul>
+
+<li><a href="http://www.facebook.com"><img src="images/facebook.png" height="42" width="38" /></a>
+</li>
+<li><a href="http://www.instagram.com"><img src="images/instagram-new.png" height="42" width="38" /></a>
+</li>
+<li><a href="http://www.twitter.com"><img src="images/twitter-squared.png" height="42" width="38" /></a>
+</li>
+
+
+</ul>
+<p> Contact Us Today For More Details Info - phone number</p>
+</div>
+</div>
+<div id="topnav">
+<ul>
+<li><a href="index.html">WELCOME<a></li>
+<li><a href="moreimages.html">MORE IMAGES<a></li>
+<li><a href="contact.html">CONTACT<a></li>
+
+
+</ul>
+</div>
+
+<div class="w3-content w3-section">
+  <img class="mySlides" src="images/nature-3082832__480.jpg"  height="341" width="962">
+  <img class="mySlides" src="images/mountain-landscape-2031539__480.jpg"  height="341" width="962">
+  <img class="mySlides" src="images/sunset-3325080__480.jpg"  height="341" width="962">
+  <img class="mySlides" src="images/drop-3698073__480.jpg"  height="341" width="962">
+
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+<div class="container">
+  <form action="/action_page.php">
+  <div class="row">
+    <div class="col-25">
+      <label for="fname">First Name</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">Last Name</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    </div>
+  </div>
+    <div class="row">
+    <div class="col-25">
+      <label for="lname">Email ID</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lname" name="Emailid" placeholder="Your Emial ID..">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-25">
+      <label for="country">Country</label>
+    </div>
+    <div class="col-75">
+      <select id="state" name="state">
+        <option value="Delhi">Delhi</option>
+        <option value="Lucknow">Lucknow</option>
+        <option value="Gujarat">Gujarat</option>
+         <option value="Maharastra">Maharastra</option>
+          <option value="Tamil Nadu">Tamil Nadu</option>
+           <option value="Kanpur">Kanpur</option>
+
+      </select>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="subject">Subject</label>
+    </div>
+    <div class="col-75">
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    </div>
+  </div>
+  <div class="row">
+    <input type="submit" value="Submit">
+  </div>
+  </form>
+</div>
+

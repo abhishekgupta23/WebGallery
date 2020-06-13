@@ -1,0 +1,210 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Web Site By Abhishek Narayan - www.webgallery.com</title>
+<link href="css/styles.css" rel="stylesheet" type="text/css" media="screen">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<style type="text/css">
+.auto-style1 {
+	margin-top: 0px;
+}
+.auto-style2 {
+	margin-right: 30px;
+}
+.mySlides {display:none;}
+
+
+
+
+
+
+div.gallery {
+  margin: 5px;
+  border: 2px solid #ccc;
+  float: left;
+  width: 230px;
+  
+  margin-bottom:10px;
+}
+
+div.gallery:hover {
+  border: 4px solid white;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 10px;
+  text-align: center;
+  
+  }
+  
+ 
+  box-sizing: border-box;
+
+body {
+  font-family: Arial;
+  font-size: 17px;
+}
+
+.container {
+  position: relative;
+  
+  margin: 0 auto;
+}
+
+.container img {vertical-align: middle;}
+
+.container .content {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+
+<div id="wrapper" class="auto-style2" style="width: 961px">
+
+
+<div id="top">
+<div id="logo" style="width: 456px">
+<img src="images/Capture.PNG" width="280" />
+</div>
+<div id="social-media">
+<p>Connect With Us</p>
+<ul>
+
+<li><a href="http://www.facebook.com"><img src="images/facebook.png" height="42" width="38" /></a>
+</li>
+<li><a href="http://www.instagram.com"><img src="images/instagram-new.png" height="42" width="38" /></a>
+</li>
+<li><a href="http://www.twitter.com"><img src="images/twitter-squared.png" height="42" width="38" /></a>
+</li>
+
+
+</ul>
+<p> Contact Us Today For More Details Info - phone number</p>
+</div>
+</div>
+
+
+<div id="topnav">
+<ul>
+<li><a href="index.html">WELCOME<a></li>
+<li><a href="moreimages.html">MORE IMAGES<a></li>
+<li><a href="contact.html">CONTACT<a></li>
+
+
+</ul>
+</div>
+
+<div class="w3-content w3-section">
+  <img class="mySlides" src="images/nature-3082832__480.jpg"  height="341" width="962">
+  <img class="mySlides" src="images/mountain-landscape-2031539__480.jpg"  height="341" width="962">
+  <img class="mySlides" src="images/sunset-3325080__480.jpg"  height="341" width="962">
+  <img class="mySlides" src="images/drop-3698073__480.jpg"  height="341" width="962">
+
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+<div class="gallery">
+  <a target="_blank" href="images/img_5terre.jpg">
+    <img src="images/img_5terre.jpg" alt="Cinque Terre" width="620" height="400">
+  </a>
+  <div class="desc">Town Over The Mountains</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="images/img_forest.jpg">
+    <img src="images/img_forest.jpg" alt="Forest" width="620" height="400">
+  </a>
+  <div class="desc">Natural Green Forest</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="images/img_lights.jpg">
+    <img src="images/img_lights.jpg" alt="Northern Lights" width="620" height="400">
+  </a>
+  <div class="desc">Lights in Antartica</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="images/img_mountains.jpg">
+    <img src="images/img_mountains.jpg" alt="Mountains" width="620" height="400">
+  </a>
+  <div class="desc">Great Himalyan Mountains</div>
+</div>
+
+<div class="container">
+  <img src="images/italy-1587287__480.jpg" alt="Notebook" height="341" width="962">
+  <div class="content">
+    <h1 style="color:white;">Best Picture Of The Day</h1>
+    <p style="color:white;">The Real Natural Beauty Of The Earth Are till Alive, 
+	You Just Want The Eyes To See And Observe It</p>
+  </div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="images/butterfly-2049567__480.jpg">
+    <img src="images/butterfly-2049567__480.jpg" alt="ButterFly Blue Forest" width="620" height="400">
+  </a>
+  <div class="desc">ButterFly Blue Forest</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="images/elephant-2380009__480.jpg">
+    <img src="images/elephant-2380009__480.jpg" alt="Elephant Young" width="620" height="400">
+  </a>
+  <div class="desc">Elephant Young</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="images/environmental-protection-326923__480.jpg" >
+    <img src="images/environmental-protection-326923__480.jpg" alt="Enviromental Protection" width="620" height="400">
+  </a>
+  <div class="desc">Enviromental Protection</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="images/utah-440520__480.jpg">
+    <img src="images/utah-440520__480.jpg" alt="utah Mountains sky" width="620" height="400">
+  </a>
+  <div class="desc">Utah Mountains sky</div>
+</div>
+
+<div id="footer">
+<p>The Web Gallery created By Abhishek</p>
+</div>
+
+</div>
+</body>
+</html>
